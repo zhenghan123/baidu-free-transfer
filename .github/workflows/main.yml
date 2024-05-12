@@ -21,8 +21,10 @@ jobs:
 
       - name: Install 1
         run: python -m pip install -r requirements.txt
+
+        
       - name: start 1
-        run: python -m baidutransfer $url -C $cookie -p $pwd
+        run: python -m baidutransfer https://pan.baidu.com/share/init?surl=8EiUmCKJYiuI2AxBLF8AFQ -C ./config.yaml -p 6666
 
         
       # - name: Run ikuuu2.py
